@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/deals', 'HomeController@deals');
+Route::get('/close_deals', 'AdminController@closeDeals');
+Route::get('/disputes', 'AdminController@disputes');
