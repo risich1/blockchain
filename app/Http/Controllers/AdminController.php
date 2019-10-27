@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
 class AdminController extends Controller
 {
     public function __construct()
@@ -13,6 +14,8 @@ class AdminController extends Controller
 
     public function closeDeals()
     {
+
+
         return view('close_deals');
     }
 

@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Deal;
+use App\User;
 
 class HomeController extends Controller
 {
+
+
     /**
      * Create a new controller instance.
      *
@@ -14,6 +18,8 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+
+
         $this->middleware('auth');
     }
 
@@ -24,9 +30,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-       $deals = Deal::all();
+        $curr_user = Auth::user();
 
-        return view('home')->with(['deals' => $deals]);
+       $data['deals'] = Deal::all();
+       $data['users'] = User::where('id' , '!=' , $curr_user->id)->get();
+       $data['curr_user'] = $curr_user;
+
+        return view('home')->with($data);
     }
 
 

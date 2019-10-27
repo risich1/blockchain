@@ -15,7 +15,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -76,54 +76,13 @@
             @yield('content')
         </main>
     </div>
-
-    <div id="create" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Создать проект</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <form action="#">
-                        <div class="form-group">
-                            <label class="label">Название</label>
-                            <input type="text" placeholder="Предмет сделки" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="label">Заказчик</label>
-                            <input type="text" placeholder="ФИО" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label class="label">Исполнитель</label>
-                            <input type="text" placeholder="ФИО" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="label">Сроки(старт)</label>
-                            <input type="date" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="" class="label">Сроки(конец)</label>
-                            <input type="date" class="form-control">
-                        </div>
-
-                        <div class="form-group">
-                            <label class="label">Сумма</label>
-                            <input type="number" placeholder="Сумма" class="form-control">
-                        </div>
-                    </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Создать</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Отменить</button>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
+<script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+
+@yield('scripts')
+
 </html>

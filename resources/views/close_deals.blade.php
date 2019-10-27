@@ -7,35 +7,11 @@
                 <div class="sidebar card">
                     <a href="/home">Текущие сделки</a>
                     <a href="/close_deals" class="active">Завершенные сделки</a>
-{{--                    <a href="/disputes">Споры</a>--}}
+                    <a href="/disputes">Споры</a>
                 </div>
             </div>
             <div class="col-md-10">
                 <div class="row justify-content-center">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Договор на разработку сайта</h5>
-                                <a href="#" class="btn btn-primary">Перейти к сделке</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Договор на разработку сайта</h5>
-                                <a href="#" class="btn btn-primary">Перейти к сделке</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Договор на разработку сайта</h5>
-                                <a href="#" class="btn btn-primary">Перейти к сделке</a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body">

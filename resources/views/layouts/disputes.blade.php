@@ -7,7 +7,7 @@
                 <div class="sidebar card">
                     <a href="/home">Текущие сделки</a>
                     <a href="/close_deals">Завершенные сделки</a>
-{{--                    <a href="/disputes" class="active">Споры</a>--}}
+                    <a href="/disputes" class="active">Споры</a>
                 </div>
             </div>
             <div class="col-md-10">
@@ -54,6 +54,5 @@
         <i class="fas fa-plus"></i>
     </button>
 
-
 @endsection
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
